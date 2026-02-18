@@ -1,0 +1,121 @@
+/* basic page layout and centering */
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    padding:40px 15px;
+}
+
+/* dark mode color for the body */
+.dark{
+    background:#1f1f2e;
+    color:white;
+}
+
+/* main container */
+.container{
+    width:100%;
+    max-width:500px;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.15);
+}
+
+/* dark mode for the container */
+.dark .container{
+    background:#2c2c40;
+}
+
+/* app title */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* layout for task input,date and add */
+.inputSection{
+    display:flex;
+    gap:8px;
+    margin-bottom:15px;
+    flex-wrap:wrap;
+}
+
+/* style for text and date */
+input{
+    flex:1;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* style for button */
+button{
+    padding:8px 12px;
+    border:none;
+    background:#2d6cdf;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* button hover */
+button:hover{
+    background:#1f4fb2;
+}
+
+/* layout for filter buttons */
+.filterSection{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+    flex-wrap:wrap;
+    gap:6px;
+}
+
+/* remove default list padding */
+ul{
+    padding:0;
+}
+
+/* each task row */
+li{
+    list-style:none;
+    padding:10px;
+    background:#e9e9e9;
+    margin-bottom:8px;
+    border-radius:6px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* dark mode task row */
+.dark li{
+    background:#3a3a55;
+}
+
+/* text decoration style for completed task */
+.completed{
+    text-decoration:line-through;
+    color:green;
+}
+
+/* style for due date */
+.date{
+    font-size:12px;
+    color:#d33;
+}
+
+/* edit/deletd button */
+.actions button{
+    margin-left:5px;
+    background:#555;
+}
+
+/* delete button red */
+.delete{
+    background:#d33;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title -->
+    <title>Todo App</title>
+    <!-- link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- main container fro the app -->
+<div class="container">
+
+    <!-- app title -->
+    <h2>Todo List 📝</h2>
+
+    <!-- input section: text, date and add button -->
+    <div class="inputSection">
+        <input id="taskInput" type="text" placeholder="Enter task">
+        <input id="dateInput" type="date">
+        <button onclick="addTask()">Add</button>
+    </div>
+
+    <!-- filter button to show: all, pending, completed tasks -->
+    <div class="filterSection">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('pending')">Pending</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+        <!-- toggle dark/light mode -->
+        <button onclick="toggleMode()">Dark</button>
+    </div>
+
+    <!-- tasklist will be generated here by javascript -->
+    <ul id="taskList"></ul>
+
+</div>
+
+<!-- link to external javascript file -->
+<script src="script.js"></script>
+</body>
+</html>
